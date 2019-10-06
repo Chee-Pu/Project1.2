@@ -1,0 +1,81 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Project1.1"
+        android:navigationIcon="@mipmap/ic_launcher">
+    </Toolbar>
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/defaultmargin"
+        android:layout_width="@dimen/imagedp"
+        android:layout_height="@dimen/imagedp"
+        android:src="@mipmap/ic_launcher">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/textwidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaultmargin"
+        android:hint="Username"
+        android:inputType="text">
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/textwidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defaultmargin"
+        android:hint="Password"
+        android:inputType="textPassword">
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Log In"
+        android:layout_marginTop="@dimen/defaultmargin"
+        android:id="@+id/login">
+    </Button>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckedTextView
+            android:id="@+id/checktext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do not have account?"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/defaultmargin"
+            android:checked="true">
+        </CheckedTextView>
+
+        <CheckedTextView
+            android:id="@+id/checktext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About!"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:checked="true"
+            android:padding="@dimen/defaultmargin">
+        </CheckedTextView>
+
+    </RelativeLayout>
+
+</LinearLayout>
